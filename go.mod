@@ -1,4 +1,4 @@
-module github.com/tailscale/caddy-tailscale
+module github.com/cache-missing/caddy-tailscale
 
 go 1.22.0
 
