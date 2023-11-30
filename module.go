@@ -176,8 +176,8 @@ func getNode(ctx caddy.Context, name string) (*tailscaleNode, error) {
 			return nil, err
 		}
 
-		if os.Getenv("TS_CONTROL") != "" {
-			s.ControlURL = os.Getenv("TS_CONTROL")
+		if os.Getenv("TS_CONTROL_URL") != "" {
+			s.ControlURL = os.Getenv("TS_CONTROL_URL")
 		}
 
 		if s.Dir, err = getStateDir(name, app); err != nil {
